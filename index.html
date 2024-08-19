@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Dipro Roy</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentOcean - Portfolio</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="homepage.html">
+                    <img src="https://i.ibb.co/42Y2wCg/attachment-116437922-removebg-preview.png" alt="ContentOcean Logo" class="logo">
+                    <span class="company-name">ContentOcean</span>
+                </a>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#portfolio" aria-label="View Portfolio">Portfolio</a></li>
+                    <li><a href="services.html" aria-label="View Services">Services</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="container portfolio-container">
+                <div class="text-content">
+                    <h1>ContentOcean</h1>
+                    <p class="subtitle">Your Ultimate Content Search Engine</p>
+                    <a href="services.html" class="get-started-button">Get Started</a>
+                </div>
+                <div class="image-content">
+                    <img src="https://i.ibb.co/mzZ478p/content-writing.webp" alt="Content Writing">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let timeout;
+        
+        function handleScroll() {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+            
+            document.body.classList.add('fade-transition');
+            
+            timeout = setTimeout(() => {
+                document.body.classList.remove('fade-transition');
+            }, 1000);
+        }
+        
+        window.addEventListener('scroll', handleScroll);
+    });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
